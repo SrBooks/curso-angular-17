@@ -1,12 +1,28 @@
 import { Component } from '@angular/core';
+import { GamesComponent } from '../games/games.component';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [GamesComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+  username = 'SrBooks';
+  isLoggedIn = false;
+  favGame = '';
+
+  getFavoriteGame(gameName: string) {
+    this.favGame = gameName;
+  }
+
+  changeLoggin() {
+    if(this.isLoggedIn){
+      this.isLoggedIn = false;
+    } else {
+      this.isLoggedIn = true;
+    }
+  }
 
 }

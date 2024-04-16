@@ -1,0 +1,32 @@
+section {
+    display: grid;
+    place-items: center;
+    padding-top: 30px;
+    font-size: 22px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    place-items:center;
+    justify-content: space-around;
+}
+
+nav img {
+    width: 10%;
+    border-radius:50px;
+}
+
+button {
+    background-color: #1b6569;
+    border: none;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+button:hover{
+    background-color: #114c4f;
+    cursor:pointer;
+}
